@@ -1,6 +1,7 @@
 //import logo from "./logo.svg";
 import "./App.css";
-import imgImg from './assets/PNG36.png'
+import imgImg from "./assets/PNG36.png";
+import png from "./assets/PNG101.png";
 
 const topSecionData = {
   title: "The band!",
@@ -13,55 +14,55 @@ const topSecionData = {
 function App() {
   return (
     <div className="">
-    <section className="top container">
-      <h1 className="title title--main">{topSecionData.title}</h1>
-      <h6 className="title title--sub">{topSecionData.subTitle}</h6>
-      <p className="text--main">{topSecionData.para}</p>
-      <div className="people-container d-flex justify-around">
-        <article className="people-card">
-          <p>{topSecionData.cardName}</p>
-          <img src={`img/${topSecionData.cardImage}`} alt="cart" />
-        </article>
-        <article className="people-card">
-          <p>{topSecionData.cardName}</p>
-          <img src={imgImg} alt="cart" />
-        </article>
-        <article className="people-card">
-          <p>{topSecionData.cardName}</p>
-          <img src={`img/${topSecionData.cardImage}`} alt="cart" />
-        </article>
-      </div>
-    </section>
-    <section className="black">
-      <div className="container">
-        <h2 className="title--main">Tour dates</h2>
-        <h6 className="title title--sub">Remember to book your tickets</h6>
-        <div className="tour-cards-container d-flex justify-around">
-          <article className="tour-card">
-            <img src="img/desert.jpg" alt="cart" />
-            <p className="title--card">New York</p>
-            <p className="tour__date">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button className="btn--black">Buy Tickets</button>
+      <section className="top container">
+        <h1 className="title title--main">{topSecionData.title}</h1>
+        <h6 className="title title--sub">{topSecionData.subTitle}</h6>
+        <p className="text--main">{topSecionData.para}</p>
+        <div className="people-container d-flex justify-around">
+          <article className="people-card">
+            <p>{topSecionData.cardName}</p>
+            <img src={`img/${topSecionData.cardImage}`} alt="cart" />
           </article>
-          <article className="tour-card">
-            <img src="img/desert.jpg" alt="cart" />
-            <p className="title--card">New York</p>
-            <p className="tour__date">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button className="btn--black">Buy Tickets</button>
+          <article className="people-card">
+            <p>{topSecionData.cardName}</p>
+            <img src={imgImg} alt="cart" />
           </article>
-          <article className="tour-card">
-            <img src="img/desert.jpg" alt="cart" />
-            <p className="title--card">New York</p>
-            <p className="tour__date">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button className="btn--black">Buy Tickets</button>
+          <article className="people-card">
+            <p>{topSecionData.cardName}</p>
+            <img src={`img/${topSecionData.cardImage}`} alt="cart" />
           </article>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+      <section className="black">
+        <div className="container">
+          <h2 className="title--main">Tour dates</h2>
+          <h6 className="title title--sub">Remember to book your tickets</h6>
+          <div className="tour-cards-container d-flex justify-around">
+            <article className="tour-card">
+              <img src={png} alt="cart" />
+              <p className="title--card">New York</p>
+              <p className="tour__date">Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button className="btn--black">Buy Tickets</button>
+            </article>
+            <article className="tour-card">
+              <img src={png} alt="cart" />
+              <p className="title--card">New York</p>
+              <p className="tour__date">Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button className="btn--black">Buy Tickets</button>
+            </article>
+            <article className="tour-card">
+              <img src={png} alt="cart" />
+              <p className="title--card">New York</p>
+              <p className="tour__date">Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button className="btn--black">Buy Tickets</button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 
